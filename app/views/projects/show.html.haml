@@ -1,0 +1,7 @@
+%h1 Show Project
+
+%p= @project.image
+
+= image_tag @project.image_url.to_s
+= image_tag @project.image_url(:thumb).to_s
+= image_tag @project.image_url(:small_thumb).to_s
